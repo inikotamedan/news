@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inikotamedan: Menyingkap Pesona Kota Medan yang Tak Terlupakan</title>
+    <meta name="description" content="Jelajahi keindahan, budaya, dan kuliner Medan melalui panduan lengkap Inikotamedan. Temukan destinasi wisata terbaik dan pengalaman autentik di Kota Medan.">
+    <meta name="keywords" content="Inikotamedan, Medan, wisata Medan, kuliner Medan, budaya Medan, Sumatera Utara, travel guide">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            border-bottom: 5px solid #f8c471;
+        }
+        
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        header p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 25px;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #f8c471;
+            color: #2c3e50;
+        }
+        
+        /* Main Content */
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 40px 0;
+            gap: 30px;
+        }
+        
+        .main-content {
+            flex: 3;
+            min-width: 300px;
+        }
+        
+        .sidebar {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-left: 5px solid #f8c471;
+            padding-left: 15px;
+        }
+        
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            margin-bottom: 20px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            background-color: #f8c471;
+            color: #2c3e50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .read-more:hover {
+            background-color: #f39c12;
+        }
+        
+        /* Featured Section */
+        .featured {
+            background-color: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            margin: 50px 0;
+        }
+        
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        
+        .featured-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .featured-item {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .featured-item i {
+            font-size: 3rem;
+            color: #f8c471;
+            margin-bottom: 20px;
+        }
+        
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Links Section */
+        .links-section {
+            background-color: #ecf0f1;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+        
+        .links-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .link-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .link-card a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        .link-card a:hover {
+            color: #f39c12;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-section h3 {
+            color: #f8c471;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f8c471;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #f8c471;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #4a6278;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Inikotamedan: Pesona Metropolitan Sumatera Utara</h1>
+            <p>Menjelajahi keunikan Medan dari sisi sejarah, budaya, kuliner, dan destinasi wisata yang memikat hati</p>
+            <a href="#explore" class="read-more">Jelajahi Sekarang</a>
+        </div>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-city"></i> Tentang Medan</a></li>
+            <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-map-marked-alt"></i> Destinasi Wisata</a></li>
+            <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-utensils"></i> Kuliner Medan</a></li>
+            <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-theater-masks"></i> Budaya & Tradisi</a></li>
+            <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-lightbulb"></i> Tips Perjalanan</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <!-- Main Content Area -->
+            <div class="main-content">
+                <!-- About Section -->
+                <section id="about" class="card">
+                    <img src="https://images.unsplash.com/photo-1593693399579-4c4c4ad43d8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Kota Medan">
+                    <div class="card-content">
+                        <h2>Mengenal Medan, Kota Metropolitan dengan Segudang Pesona</h2>
+                        <p>Medan, ibukota Provinsi Sumatera Utara, adalah kota terbesar ketiga di Indonesia yang menawarkan perpaduan unik antara modernitas dan tradisi. Dikenal dengan julukan "Inikotamedan", kota ini merupakan pusat perdagangan, budaya, dan kuliner di wilayah Sumatera.</p>
+                        <p>Sejarah Medan bermula dari peradaban Kesultanan Deli yang meninggalkan warisan arsitektur megah seperti Istana Maimun. Saat ini, Medan berkembang menjadi kota kosmopolitan dengan penduduk multi-etnis yang hidup harmonis, mencerminkan kekayaan budaya Indonesia.</p>
+                        <p>Dari sudut pandang wisata, Medan menawarkan pengalaman yang tak terlupakan mulai dari wisata sejarah, kuliner legendaris, hingga akses menuju destinasi alam menakjubkan seperti Danau Toba dan Bukit Lawang.</p>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </section>
+                
+                <!-- Tourism Section -->
+                <section id="wisata" class="card">
+                    <div class="card-content">
+                        <h2>Destinasi Wisata Terbaik di Medan</h2>
+                        <p>Medan memiliki berbagai destinasi wisata yang cocok untuk semua jenis traveler. Berikut adalah beberapa tempat yang wajib dikunjungi saat berada di kota ini:</p>
+                        
+                        <h3>1. Istana Maimun</h3>
+                        <p>Istana megah peninggalan Kesultanan Deli ini adalah ikon kota Medan. Arsitekturnya yang memadukan unsur Melayu, Islam, Spanyol, India, dan Italia membuatnya unik dan memukau.</p>
+                        
+                        <h3>2. Masjid Raya Al-Mashun</h3>
+                        <p>Masjid bersejarah dengan arsitektur Moorish yang indah, dibangun pada masa pemerintahan Sultan Ma'mun Al Rasyid Perkasa Alam. Keindahan interior dan eksteriornya membuatnya menjadi salah satu masjid terindah di Indonesia.</p>
+                        
+                        <h3>3. Tjong A Fie Mansion</h3>
+                        <p>Rumah megah milik pengusaha Tionghoa legendaris, Tjong A Fie, yang mencerminkan perpaduan arsitektur Tionghoa, Melayu, dan Eropa. Kini menjadi museum yang menyimpan sejarah peranakan Tionghoa di Medan.</p>
+                        
+                        <h3>4. Rahmat International Wildlife Museum & Gallery</h3>
+                        <p>Museum satwa liar terbesar di Asia Tenggara dengan koleksi lebih dari 5.000 spesimen hewan dari berbagai belahan dunia yang diawetkan.</p>
+                        
+                        <!-- Gallery -->
+                        <div class="gallery">
+                            <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt="Istana Maimun">
+                            <img src="https://images.unsplash.com/photo-1580657018950-5e20ed6d6f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Masjid Raya Medan">
+                            <img src="https://images.unsplash.com/photo-1590647678605-43e73d2f3d52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Kuliner Medan">
+                            <img src="https://images.unsplash.com/photo-1558640476-437a2e9b7e6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pasar Tradisional Medan">
+                        </div>
+                        
+                        <a href="#" class="read-more">Lihat Destinasi Lainnya</a>
+                    </div>
+                </section>
+                
+                <!-- Culinary Section -->
+                <section id="kuliner" class="card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Kuliner Medan">
+                    <div class="card-content">
+                        <h2>Surga Kuliner Medan yang Legendaris</h2>
+                        <p>Medan terkenal sebagai salah satu kota dengan kuliner terbaik di Indonesia. Perpaduan cita rasa Melayu, Tionghoa, India, dan Batak menciptakan hidangan yang unik dan tak terlupakan.</p>
+                        
+                        <h3>Makanan Wajib Coba di Medan:</h3>
+                        <ul style="margin-left: 20px; margin-bottom: 20px;">
+                            <li><strong>Bika Ambon</strong> - Kue tradisional dengan tekstur kenyal dan rasa manis yang khas</li>
+                            <li><strong>Mie Gomak</strong> - Mie khas Batak dengan bumbu andaliman yang menggugah selera</li>
+                            <li><strong>Soto Medan</strong> - Soto dengan kuah santan kental dan bumbu rempah yang kuat</li>
+                            <li><strong>Durian Medan</strong> - Raja buah dengan cita rasa dan aroma yang tak tertandingi</li>
+                            <li><strong>Laksa Medan</strong> - Perpaduan mie dengan kuah kental berbasis ikan dan santan</li>
+                            <li><strong>Bihun Bebek</strong> - Bihun dengan kaldu beku yang gurih dan daging beku empuk</li>
+                        </ul>
+                        
+                        <p>Tempat makan legendaris seperti <strong>Tip Top Restaurant</strong> (restoran tertua di Medan), <strong>Merdeka Walk</strong> (pusat kuliner malam), dan <strong>Kesawan Square</strong> wajib dikunjungi untuk pengalaman kuliner autentik Medan.</p>
+                        <a href="#" class="read-more">Eksplor Kuliner Medan</a>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Culture Card -->
+                <section id="budaya" class="card">
+                    <div class="card-content">
+                        <h2>Budaya & Tradisi Medan</h2>
+                        <p>Medan adalah melting pot budaya dengan penduduk dari berbagai etnis seperti Melayu, Batak, Tionghoa, Jawa, Minangkabau, dan India yang hidup berdampingan secara harmonis.</p>
+                        
+                        <h3>Festival Budaya:</h3>
+                        <ul style="margin-left: 20px; margin-bottom: 20px;">
+                            <li><strong>Festival Danau Toba</strong> - Menampilkan budaya Batak dengan tarian, musik, dan kuliner khas</li>
+                            <li><strong>Medan Fair</strong> - Pameran terbesar di Sumatera dengan pertunjukan budaya dan industri</li>
+                            <li><strong>Pesta Budaya Melayu Deli</strong> - Memperkenalkan warisan budaya Melayu Deli</li>
+                        </ul>
+                        
+                        <h3>Kesenian Tradisional:</h3>
+                        <p>Medan kaya dengan seni tradisional seperti <strong>Tari Tortor</strong> (Batak), <strong>Tari Serampang Dua Belas</strong> (Melayu), dan <strong>Musik Gordang Sambilan</strong> (Mandailing).</p>
+                        
+                        <h3>Bahasa:</h3>
+                        <p>Bahasa Indonesia adalah bahasa pengantar utama, namun bahasa daerah seperti Bahasa Batak, Bahasa Melayu, dan Bahasa Hokkien juga banyak digunakan dalam percakapan sehari-hari.</p>
+                        
+                        <a href="#" class="read-more">Pelajari Budaya Medan</a>
+                    </div>
+                </section>
+                
+                <!-- Travel Tips Card -->
+                <section id="tips" class="card">
+                    <div class="card-content">
+                        <h2>Tips Berwisata ke Medan</h2>
+                        
+                        <h3>Waktu Terbaik Berkunjung:</h3>
+                        <p>Medan bisa dikunjungi sepanjang tahun, namun bulan Juni hingga September adalah periode terbaik dengan curah hujan rendah.</p>
+                        
+                        <h3>Transportasi:</h3>
+                        <ul style="margin-left: 20px; margin-bottom: 20px;">
+                            <li>Bandara Internasional Kualanamu menghubungkan Medan dengan kota-kota besar di Indonesia dan luar negeri</li>
+                            <li>Transportasi dalam kota: taksi, ride-hailing, becak motor, dan bus Trans Metro Deli</li>
+                            <li>Untuk keliling kota, sewa mobil dengan sopir direkomendasikan bagi wisatawan</li>
+                        </ul>
+                        
+                        <h3>Akomodasi:</h3>
+                        <p>Medan menawarkan berbagai pilihan akomodasi dari hotel bintang 5 hingga penginapan budget. Area sekitar Jalan Pemuda dan Jalan S. Parman banyak terdapat hotel pilihan.</p>
+                        
+                        <h3>Etika & Adat Istiadat:</h3>
+                        <p>Hormati tempat ibadah dan budaya lokal. Saat mengunjungi desa adat Batak, ikuti tata krama yang berlaku seperti menyapa dengan hormat.</p>
+                        
+                        <a href="#" class="read-more">Tips Lengkap</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <h2>Mengapa Harus Mengunjungi Medan?</h2>
+            <div class="featured-container">
+                <div class="featured-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Surga Kuliner</h3>
+                    <p>Ragam makanan legendaris dengan cita rasa autentik yang tak ditemukan di tempat lain</p>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Warisan Budaya</h3>
+                    <p>Peninggalan sejarah yang mencerminkan peradaban multi-etnis yang harmonis</p>
+                </div>
+                <div class="featured-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Gerbang Wisata Alam</h3>
+                    <p>Akses menuju Danau Toba, Bukit Lawang, Tangkahan, dan destinasi alam Sumatera Utara lainnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Links Section -->
+    <section class="links-section">
+        <div class="container">
+            <h2 id="explore">Tautan Terkait untuk Eksplorasi Lebih Lanjut</h2>
+            <div class="links-grid">
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">Official Tourism Indonesia - Medan</a>
+                    <p>Situs resmi pariwisata Indonesia tentang Kota Medan</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">Website Resmi Pemko Medan</a>
+                    <p>Informasi resmi pemerintah Kota Medan</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">Medan Tourism Guide</a>
+                    <p>Panduan lengkap wisata Kota Medan</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">TripAdvisor - Medan</a>
+                    <p>Ulasan wisatawan tentang destinasi di Medan</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">Backpacker Guide to Medan</a>
+                    <p>Panduan Medan untuk backpacker dengan anggaran terbatas</p>
+                </div>
+                <div class="link-card">
+                    <a href="https://inikotamedan.github.io/news/" target="_blank">Indonesia Kaya - Budaya Medan</a>
+                    <p>Artikel mendalam tentang keberagaman budaya Medan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Inikotamedan</h3>
+                    <p>Portal informasi lengkap tentang Kota Medan, Sumatera Utara. Menyajikan panduan wisata, kuliner, budaya, dan tips perjalanan terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategori</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://inikotamedan.github.io/news/">Tentang Medan</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/">Destinasi Wisata</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/">Kuliner Medan</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/">Budaya & Tradisi</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/">Tips Perjalanan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Penting</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://inikotamedan.github.io/news//" target="_blank">Wonderful Indonesia</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/" target="_blank">Kemenparekraf RI</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/" target="_blank">North Sumatra Tourism</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/" target="_blank">Bandara Kualanamu</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak & Sosial Media</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://inikotamedan.github.io/news/"><i class="fab fa-instagram"></i> Instagram @inikotamedan</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/"><i class="fab fa-facebook"></i> Facebook Inikotamedan</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/"><i class="fab fa-youtube"></i> YouTube Inikotamedan</a></li>
+                        <li><a href="https://inikotamedan.github.io/news/"><i class="fas fa-envelope"></i> info@inikotamedan.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Inikotamedan. Semua hak cipta dilindungi. | Artikel ini dibuat untuk tujuan edukasi dan informasi.</p>
+                <p>Disclaimer: Gambar digunakan dari Unsplash untuk keperluan demonstrasi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
